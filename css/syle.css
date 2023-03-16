@@ -3,7 +3,8 @@ header{
     height: 60px;
     position: sticky;
     top: 0;
-    background-color: white;
+    /* background-color: white; */
+    z-index: 1;
 }
 header > div{
     height: 60px;
@@ -70,4 +71,35 @@ main{
 
 .text-bg-dark {
     background-color: RGBA(33,37,41,var(--bs-bg-opacity,0.5))!important;
+}
+
+
+.table .btn{
+    --bs-btn-font-size: 0.6rem;
+    --bs-btn-padding-x: 0.5rem;
+    --bs-btn-padding-y: 0.25rem;
+}
+.card tr th:first-child{
+    width: 50%;
+}
+
+.card ul li{
+    margin-left: 0;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+#main-part::-webkit-scrollbar{
+    display: none;
+}
+
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+#main-part {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+#stats a{
+    color: rgba(var(--bs-link-color-rgb),var(--bs-link-opacity,1));
+    text-decoration: underline;
 }
