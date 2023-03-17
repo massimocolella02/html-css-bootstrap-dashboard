@@ -90,7 +90,19 @@
 
                     <div class="order-1 order-md-3">
                         <span>Nuovo studente</span>
-                        <button type="button" class="btn btn-outline-light"><i class="fa-solid fa-plus"></i></button>
+                        <button type="button" class="btn btn-outline-light" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+                        <!-- Offcanvas -->
+                        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                            <div class="offcanvas-header">
+                              <h5 class="offcanvas-title" id="offcanvasRightLabel">Offcanvas right</h5>
+                              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body">
+                              ...
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -241,10 +253,25 @@
                         <!-- FAQ -->
                         <div class="card mb-3">
                             <h5 class="card-header text-dark">F.A.Q.</h5>
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item">Come aggiungere un nuovo studente?</li>
-                                <li class="list-group-item">Come posso accedere alle impostazioni del mio account?</li>
-                                <li class="list-group-item">Posso usare questa dashboard da mobile?</li>
+                            <ul class="list-group list-group-flush list-faq">
+                                <li class="list-group-item position-relative">
+                                    <h6>Come aggiungere un nuovo studente?</h6>
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam repellat, laudantium quisquam autem error minima quibusdam vitae, dolorum facilis corrupti amet ullam optio veniam accusantium quos aliquid animi officiis quae?</p>
+                                    <span class="position-absolute freccia-giu">&#9660;</span>
+                                    <span class="position-absolute freccia-su">&#9650;</span>
+                                </li>
+                                <li class="list-group-item position-relative">
+                                    <h6>Come aggiungere un nuovo studente?</h6>
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam repellat, laudantium quisquam autem error minima quibusdam vitae, dolorum facilis corrupti amet ullam optio veniam accusantium quos aliquid animi officiis quae?</p>
+                                    <span class="position-absolute freccia-giu">&#9660;</span>
+                                    <span class="position-absolute freccia-su">&#9650;</span>
+                                </li>
+                                <li class="list-group-item position-relative">
+                                    <h6>Come aggiungere un nuovo studente?</h6>
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam repellat, laudantium quisquam autem error minima quibusdam vitae, dolorum facilis corrupti amet ullam optio veniam accusantium quos aliquid animi officiis quae?</p>
+                                    <span class="position-absolute freccia-giu">&#9660;</span>
+                                    <span class="position-absolute freccia-su">&#9650;</span>
+                                </li>
                             </ul>
                         </div>
                     </div>
